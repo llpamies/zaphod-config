@@ -32,7 +32,6 @@
 	chosen {
 		zmk,kscan = &kscan;
 		zmk,matrix_transform = &transform;
-		zephyr,display = &ls0xx;
 	};
 
 	transform: transform {
