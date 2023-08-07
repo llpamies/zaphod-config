@@ -84,7 +84,7 @@
  
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <11 13>;
             bindings = <&kp LPAR>;
         };
         
@@ -130,7 +130,7 @@
         alpha_layer {
             label = "Alpha";
             bindings = <
-                &bootloader  &kp W        &kp F       &kp P        &kp COMMA     &kp DOT   &kp SLASH       &kp J       &kp Y        &kp LC(A)
+                &sk MEH      &kp W        &kp F       &kp P        &kp COMMA     &kp DOT   &kp SLASH       &kp J       &kp Y        &kp LC(A)
                 &hm LCTRL A  &hm LSHFT R  &hm LALT S  &kp T        &kp G         &kp M     &kp N           &hm RALT H  &hm RSHFT I  &hm RCTL O
                 &hm LGUI Z   &kp X        &kp C       &kp D        &kp V         &kp Q     &kp L           &kp U       &kp B        &hm RGUI K
                                                       &lt SYM_L E  &kp BKSP      &kp TAB   &lt NAV_L SPACE
