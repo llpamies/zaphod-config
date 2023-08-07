@@ -16,14 +16,98 @@
     combos {
         compatible = "zmk,combos";
 
-        caps_word_combo {
-	    timeout-ms = <50>;
+        caps_lock_combo {
+            timeout-ms = <50>;
             key-positions = <11 18>;
-            bindings = <&caps_word>;
+            bindings = <&kp CAPS>;
+        };
+  
+        double_quote_combo {
+            timeout-ms = <50>;
+            key-positions = <01 02>;
+            bindings = <&kp DQT>;
+        };
+
+        esc_combo {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp ESC>;
+        };
+
+        single_quote_combo {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp SQT>;
         };
         
+        semi_combo {
+            timeout-ms = <50>;
+            key-positions = <07 08>;
+            bindings = <&kp SEMI>;
+        };
+
+        enter_combo {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp ENTER>;
+        };
+        
+        colon_combo {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp COLON>;
+        };
+
+        lbrace_combo {
+            timeout-ms = <50>;
+            key-positions = <10 13>;
+            bindings = <&kp LBRC>;
+        };
+
+        rbrace_combo {
+            timeout-ms = <50>;
+            key-positions = <16 19>;
+            bindings = <&kp RBRC>;
+        };
+        
+        lsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LBKT>;
+        };
+
+        rsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp RBKT>;
+        };
+ 
+        lsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LPAR>;
+        };
+        
+        rsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <16 18>;
+            bindings = <&kp RPAR>;
+        };
+
+        lsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LT>;
+        };
+
+        rsqrt_combo {
+            timeout-ms = <50>;
+            key-positions = <26 27>;
+            bindings = <&kp GT>;
+        };
+ 
         function_layer {
-	    timeout-ms = <50>;
+            timeout-ms = <50>;
             key-positions = <30 33>;
             bindings = <&mo FUN_L>;
         };
@@ -56,10 +140,10 @@
         nav_layer {
             label = "Navigation";
             bindings = <
-                &none     &none     &none      &none      &none      &kp LC(H)   &kp LC(J)   &kp LC(K)  &kp LC(L)  &none 
-                &none     &none     &none      &none      &none      &kp LARW    &kp DARW    &kp UARW   &kp RARW   &none
-                &none     &none     &none      &none      &none      &kp HOME    &kp PG_DN   &kp PG_UP  &kp END    &none
-                                               &none      &kp DEL    &none       &none
+                &kp LC(X) &kp LC(LS(V)) &none    &none       &kp C_MUTE     &kp LC(H)   &kp LC(J)   &kp LC(K)  &kp LC(L)  &none 
+                &kp LC(C) &kp LC(V)     &none    &kp C_PLAY  &kp C_VOL_UP   &kp LARW    &kp DARW    &kp UARW   &kp RARW   &none
+                &kp LC(Z) &kp LC(Y)     &none    &kp C_NEXT  &kp C_VOL_DN   &kp HOME    &kp PG_DN   &kp PG_UP  &kp END    &none
+                                                 &none       &kp DEL        &none       &none
             >;
         };
 
