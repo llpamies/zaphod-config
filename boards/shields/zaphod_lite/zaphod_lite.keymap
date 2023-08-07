@@ -18,8 +18,14 @@
 
         caps_word_combo {
 	    timeout-ms = <50>;
-            key-positions = <12 19>;
+            key-positions = <11 18>;
             bindings = <&caps_word>;
+        };
+        
+        function_layer {
+	    timeout-ms = <50>;
+            key-positions = <30 33>;
+            bindings = <&mo FUN_L>;
         };
     };
 
