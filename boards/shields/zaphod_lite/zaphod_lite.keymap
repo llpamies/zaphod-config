@@ -94,13 +94,13 @@
             bindings = <&kp RPAR>;
         };
 
-        lsqrt_combo {
+        lt_combo {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp LT>;
         };
 
-        rsqrt_combo {
+        gt_combo {
             timeout-ms = <50>;
             key-positions = <26 27>;
             bindings = <&kp GT>;
