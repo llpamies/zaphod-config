@@ -7,8 +7,6 @@
 #define SYM_L 2
 #define FUN_L 3
 
-#define MEH LCTL(LSHFT(LALT))
-
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
@@ -130,9 +128,9 @@
         alpha_layer {
             label = "Alpha";
             bindings = <
-                &sk MEH      &kp W        &kp F       &kp P        &kp COMMA     &kp DOT   &kp SLASH       &kp J       &kp Y        &kp LC(A)
-                &hm LCTRL A  &hm LSHFT R  &hm LALT S  &kp T        &kp G         &kp M     &kp N           &hm RALT H  &hm RSHFT I  &hm RCTL O
-                &hm LGUI Z   &kp X        &kp C       &kp D        &kp V         &kp Q     &kp L           &kp U       &kp B        &hm RGUI K
+                &sk LS(LA(LCTRL)) &kp W        &kp F       &kp P        &kp COMMA     &kp DOT   &kp SLASH       &kp J       &kp Y        &kp LC(A)
+                &hm LCTRL A       &hm LSHFT R  &hm LALT S  &kp T        &kp G         &kp M     &kp N           &hm RALT H  &hm RSHFT I  &hm RCTL O
+                &hm LGUI Z        &kp X        &kp C       &kp D        &kp V         &kp Q     &kp L           &kp U       &kp B        &hm RGUI K
                                                       &lt SYM_L E  &kp BKSP      &kp TAB   &lt NAV_L SPACE
             >;
         };
